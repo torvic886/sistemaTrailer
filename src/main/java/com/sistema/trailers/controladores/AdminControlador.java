@@ -115,6 +115,7 @@ public class AdminControlador {
 	@PostMapping("/peliculas/{id}/eliminar")
 	public String eliminarPelicula(@PathVariable Integer id)
 	{
+		//Esto es una prueba 10 02 2022
 		Pelicula pelicula = peliculaRepositorio.getOne(id);
 		peliculaRepositorio.delete(pelicula);
 		servicio.eliminarArchivo(pelicula.getRutaPortada());
